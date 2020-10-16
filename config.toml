@@ -1,0 +1,13 @@
+title = "ESE 2020 System Status"
+name = "ese_2020_system_status"
+description = "Displays the system status of the various services used for the First Semester Introduction 2020 at the TU Dresden."
+defaultLocale = "en"
+
+[[locales]]
+code = "en"
+iso = "en-US"
+name = "English"
+file = "en.json"
+
+[content]
+frontMatterFormat = "toml"
