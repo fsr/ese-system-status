@@ -28,6 +28,7 @@ jobs:
       - name: Set secret and ssh fingerprint
         run: |
           echo $DEPLOY_KEY > ./.keyfile
+          chmod 600 ./.keyfile
           echo "gibbs.uberspace.de,2a00:d0c0:200::c0bf:e0ff:fec1:af72,185.26.156.132 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0MMDxoUHQume1xU9qpQZf6oWW6mmXVY8Js0qdL+zxq" > ./.known
 
       # Runs a set of commands using the runners shell
