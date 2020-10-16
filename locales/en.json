@@ -1,4 +1,25 @@
 {
   "title": "ESE 2020 System Status",
-  "description": "Displays the system status of the various services used for the First Semester Introduction 2020 at the TU Dresden."
+  "description": "Displays the system status of the various services used for the First Semester Introduction 2020 at the TU Dresden.",
+  "systems": {
+    "items": {
+      "stream": {
+        "title": "Stream"
+      },
+      "webpage": {
+        "title": "ESE Web Page"
+      },
+      "mumble": {
+        "title": "Mumble",
+        "description": "Voice Chat service"
+      },
+      "jitsi": {
+        "title": "Jitsi Meet",
+        "description": "Video Chat service"
+      },
+      "minetest": {
+        "title": "Minetest"
+      }
+    }
+  }
 }

@@ -2,6 +2,11 @@ title = "ESE 2020 System Status"
 name = "ese_2020_system_status"
 description = "Displays the system status of the various services used for the First Semester Introduction 2020 at the TU Dresden."
 defaultLocale = "en"
+baseUrl = "https://status.ese.ifsr.de/"
+
+[notifications]
+icalendar = false
+feeds = true
 
 [[locales]]
 code = "en"
@@ -9,5 +14,12 @@ iso = "en-US"
 name = "English"
 file = "en.json"
 
+[theme]
+scheduled = { position = "belowSystems" }
+
+[theme.links]
+en = { home = "https://ese.ifsr.de", contact = "mailto:ese-orga@ifsr.de" }
+
 [content]
 frontMatterFormat = "toml"
+systems = ["stream", "webpage", "mumble", "jitsi", "minetest"]
