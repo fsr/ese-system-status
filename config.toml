@@ -22,4 +22,4 @@ en = { home = "https://ese.ifsr.de", contact = "mailto:ese-orga@ifsr.de" }
 
 [content]
 frontMatterFormat = "toml"
-systems = ["stream", "webpage", "mumble", "jitsi", "minetest"]
+systems = ["stream", "webpage", "matrix", "jitsi", "chat", "bbb", "kurse", "jitsiroulette", "ts", "mumble", "minetest", "schnitzeljagd"]

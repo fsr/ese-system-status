@@ -9,16 +9,41 @@
       "webpage": {
         "title": "ESE Web Page"
       },
-      "mumble": {
-        "title": "Mumble",
-        "description": "Voice Chat service"
+      "matrix": {
+        "title": "Matrix Server",
+        "description": "Matrix Server of the iFSR that can be used to get in touch with the FSR or chat as large group."
       },
       "jitsi": {
         "title": "Jitsi Meet",
         "description": "Video Chat service"
       },
+      "chat": {
+        "title": "WebIRC Chat"
+      },
+      "bbb": {
+        "title": "BigBlueButton",
+        "description": "Open Source Web Conference Tool hosted by the AG DSN."
+      },
+      "kurse": {
+        "title": "Course System",
+        "description": "System used to enroll for various events that have a limit on the number of participants."
+      },
+      "jitsiroulette": {
+        "title": "Jitsiroulette"
+      },
+      "ts": {
+        "title": "Teamspeak",
+        "description": "Voice Chat service"
+      },
+      "mumble": {
+        "title": "Mumble",
+        "description": "Voice Chat service"
+      },
       "minetest": {
         "title": "Minetest"
+      },
+      "schnitzeljagd": {
+        "title": "Scavenger Hunt"
       }
     }
   }
