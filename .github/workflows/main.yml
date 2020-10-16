@@ -23,13 +23,13 @@ jobs:
       - uses: actions/checkout@v2
       # we're gonna need node
       - uses: actions/setup-node@v1
-
-      # Runs a single command using the runners shell
-      - name: Set secret and ssh fingerprint
-        run: |
-          echo $DEPLOY_KEY > ./.keyfile
-          chmod 600 ./.keyfile
-          echo "gibbs.uberspace.de,2a00:d0c0:200::c0bf:e0ff:fec1:af72,185.26.156.132 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIO0MMDxoUHQume1xU9qpQZf6oWW6mmXVY8Js0qdL+zxq" > ./.known
+      
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.DEPLOY_KEY }}
+          name: id_ed25519 # optional
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
       # Runs a set of commands using the runners shell
       - name: Build the page
@@ -38,4 +38,4 @@ jobs:
           npm run generate
       
       - name: Deploy page
-        run: scp -r -i ./.keyfile -o UserKnownHostsFile=./.known ./dist/* pallas@gibbs.uberspace.de:~/html/ese-status/
+        run: scp -r ./dist/* pallas@gibbs.uberspace.de:~/html/ese-status/
