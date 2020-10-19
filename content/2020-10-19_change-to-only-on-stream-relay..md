@@ -3,7 +3,8 @@ title = "Degraded stream and chat performance"
 date = "2020-10-19T07:35:21.866Z"
 severity = "degraded-performance"
 affectedsystems = ["stream", "chat"]
-resolved = false
+resolved = true
+modified = "2020-10-19T16:49:30.313Z"
 ---
 We are seeing degraded stream quality and chat disconnects.
 
