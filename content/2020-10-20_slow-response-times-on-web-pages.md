@@ -3,8 +3,8 @@ title = "Slow response times on web pages"
 date = "2020-10-20T07:05:07.631Z"
 severity = "degraded-performance"
 affectedsystems = ["webpage", "matrix", "kurse"]
-modified = "2020-10-20T07:49:07.631Z"
-resolved = false
+modified = "2020-10-20T21:14:25.138Z"
+resolved = true
 ---
 We are seeing slow response times for all web services hosted on our main server. We are investigating the issue.
 
