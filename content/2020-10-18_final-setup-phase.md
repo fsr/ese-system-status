@@ -1,5 +1,6 @@
 ---toml
 title = "Final Setup Phase"
+date = "2020-10-18T06:00:00.000Z"
 scheduled = "2020-10-18T06:00:00.000Z"
 duration = "1440"
 severity = "under-maintenance"
